@@ -1,0 +1,175 @@
+:root {
+    --red: #EB5757;
+    --violeta: #9B51E0;
+    --gris: #BDBDBD;
+    --White: hsl(0, 0%, 100%);
+}
+
+html,
+body {
+    margin: 0 auto;
+    box-sizing: border-box;
+    background-color: aliceblue;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Outfit', sans-serif;
+    font-family: 'Rubik', sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.button {
+    width: 150px;
+    border-radius: 5px;
+    border: 3px solid rgb(246, 246, 246);
+    color: var(--White);
+    background-color: rgb(255, 159, 255);
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.button:hover {
+    background: #a945c7;
+    box-shadow: 0 0 10px #a945c7, 0 0 40px #a945c7, 0 0 80px #a945c7;
+    transition-delay: 0s;
+}
+
+.button:disabled {
+    opacity: 0.5;
+}
+
+.card {
+    margin: 10px 0;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+}
+
+.exam-card {
+    border-radius: 8px;
+    width: 98%;
+    margin: 0 auto;
+}
+
+.exam-card-top {
+    position: relative;
+    width: 364px;
+    height: 67px;
+    background: var(--red);
+    margin: 10px 0px;
+    border-radius: 10px 10px 0 0;
+}
+
+.exam-card-top span:nth-child(1) {
+    box-sizing: border-box;
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    left: 8px;
+    top: 25px;
+    border: 1px solid #FFFFFF;
+    border-radius: 50%;
+}
+
+.exam-card-top span:nth-child(2) {
+    position: absolute;
+    width: 10px;
+    height: 19px;
+    left: 20px;
+    top: 31px;
+    font-size: 16px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.exam-card-top span:nth-child(3) {
+    position: absolute;
+    width: 162px;
+    height: 19px;
+    left: 52px;
+    top: 30px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.exam-card-top span:nth-child(4) {
+    position: absolute;
+    left: 52px;
+    top: 30px;
+    font-size: 16px;
+    color: #FFFFFF;
+    margin-left: 180px;
+}
+
+.exam-card-top span:nth-child(5) {
+    position: absolute;
+    left: 52px;
+    top: 30px;
+    font-size: 16px;
+    color: #FFFFFF;
+    margin-left: 230px;
+}
+
+.exam-card-top img {
+    position: relative;
+    left: 52px;
+    top: 25px;
+    margin-left: 280px;
+}
+
+.exam-card-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    position: relative;
+    width: 364px;
+    height: 100px;
+    top: -10px;
+    background: var(--White);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0 0 10px 10px;
+}
+
+.exam-card-bottom div p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #130909;
+    margin-left: 20px;
+}
+
+.datos {
+    position: absolute;
+    width: 330px;
+    height: 0px;
+    left: 18px;
+    top: 55px;
+    border-top: 1px solid #888888;
+}
+
+.exam-card-bottom div span:nth-child(1) {
+    position: absolute;
+    top: 15px;
+    font-size: 13px;
+    line-height: 16px;
+    color: #888888;
+    margin-left: 20px;
+}
+
+.exam-card-bottom div span:nth-child(2) {
+    position: absolute;
+    left: 52px;
+    top: 15px;
+    font-size: 13px;
+    line-height: 16px;
+    color: #888888;
+    margin-left: 200px;
+}
